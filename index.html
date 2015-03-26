@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html lan="en" ng-app="myApp" style="height: 100%">
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   <title>Corvid Spatial Reasoning</title>
@@ -12,12 +12,34 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
-<body>
+<body style="height: 100%">
   <!-- views will be injected here -->
-  <div class="container">
-    <div ui-view>
-      hello world
+  <div class="container-fluid" style="height: 100%">
+
+    <h1>Corvid Spatial Reasoning</h1>
+
+    <div id="main" style="height: 85%; border: 1px solid;">
+      
+      <div id="heading" style="height: 15%; border: 1px solid;">
+
+        <a ui-sref="experiment" style="width:33%; height: 100%; ; border: 1px solid; padding:3px; float:left">
+          Experiment
+        </a>
+        <a ui-sref="data" style="width:33%; height: 100%; ; border: 1px solid; padding:3px; float:left">
+          Data
+        </a>
+        <a ui-sref="feeders" style="width:33%; height: 100%; ; border: 1px solid; padding:3px; float:left">
+          Feeders
+        </a>
+        
+      </div>
+
+      <div ui-view style="height: 85%; border: 1px solid; padding:3px;">
+        
+      </div>
+
     </div>
+
   </div>
 
   <script type="text/javascript" src="js/app.js"></script>
